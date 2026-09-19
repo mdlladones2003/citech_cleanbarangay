@@ -1,0 +1,27 @@
+{
+  "name": "citech_cleanbarangay",
+  "version": "1.0.0",
+  "description": "Barangay Waste Reporting System",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tailwindcss -i ./assets/css/input.css -o ./assets/css/app.css --watch",
+    "build": "tailwindcss -i ./assets/css/input.css -o ./assets/css/app.css --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdlladones2003/citech_cleanbarangay.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/mdlladones2003/citech_cleanbarangay/issues"
+  },
+  "homepage": "https://github.com/mdlladones2003/citech_cleanbarangay#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  }
+}
