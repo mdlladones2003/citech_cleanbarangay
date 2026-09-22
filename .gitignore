@@ -1,4 +1,11 @@
+.env
+
+/vendor/
 /node_modules/
-/.env
-/uploads/*
-!/uploads/.gitkeep
+
+uploads/documents/*
+uploads/profiles/*
+
+storage/logs/*
+
+!.gitkeep

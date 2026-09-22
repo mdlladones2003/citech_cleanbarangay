@@ -1,0 +1,12 @@
+CREATE TABLE locations (
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    barangay VARCHAR(150) NOT NULL,
+    street VARCHAR(150) NULL,
+    landmark VARCHAR(255) NULL,
+    latitude DECIMAL(10, 8) NULL,
+    longitude DECIMAL(11, 8) NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB;
+
+CREATE INDEX idx_locations_barangay ON locations(barangay);
