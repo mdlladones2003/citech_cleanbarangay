@@ -1,6 +1,72 @@
 @import "tailwindcss";
-@source "../../**/*.php";
-@source "../../**/*.html";
+
 @plugin "daisyui" {
-	themes: emerald --default;
+    themes: emerald --default;
+}
+
+/* ========================================
+   MANROPE FONT
+   ======================================== */
+
+@font-face {
+    font-family: "Manrope";
+    src: url("../assets/fonts/manrope/Manrope-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: url("../assets/fonts/manrope/Manrope-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: url("../assets/fonts/manrope/Manrope-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: url("../assets/fonts/manrope/Manrope-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: url("../assets/fonts/manrope/Manrope-ExtraBold.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ========================================
+   TAILWIND THEME
+   ======================================== */
+
+@theme {
+    --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+}
+
+/* ========================================
+   BASE STYLES
+   ======================================== */
+
+@layer base {
+    html {
+        font-family: "Manrope", ui-sans-serif, system-ui, sans-serif;
+    }
+
+    body {
+        background-color: var(--color-base-200);
+        color: var(--color-base-content);
+    }
 }
